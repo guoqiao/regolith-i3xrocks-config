@@ -1,3 +1,20 @@
 # Date Time
+# [time]
+# interval=xresource:i3xrocks.time.interval 10
+
 [time]
-interval=xresource:i3xrocks.time.interval 10
+command=TZ='America/Puerto_Rico' date +"%d %H:%M %Z"
+interval=xresource:i3xrocks.time.interval 60
+
+
+[time]
+command=date --utc +"%d %H:%M %Z"
+interval=xresource:i3xrocks.time.interval 60
+
+[time]
+command=TZ='Asia/Shanghai' date +"%d %H:%M %Z"
+interval=xresource:i3xrocks.time.interval 60
+
+[time]
+command=date +"%m-%d %a %T %Z"
+interval=xresource:i3xrocks.time.interval 1
